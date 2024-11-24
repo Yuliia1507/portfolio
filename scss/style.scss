@@ -1051,7 +1051,7 @@ body {
 .projects {
 	scroll-margin-top: toRem(77);
 	position: relative;
-	@include adaptiveValue("padding-top", 100, 30);
+	@include adaptiveValue("padding-top", 100, 50);
 	@include adaptiveValue("padding-bottom", 80, 50);
 	// .projects__container
 
