@@ -394,7 +394,7 @@ body.menu-open {
   }
 }
 .header.scrolled {
-  padding: 0.5rem;
+  padding: 0.5rem 0rem;
   background-color: #16111f;
   border-bottom: 0.0625rem solid var(--accent-color);
 }

@@ -145,7 +145,7 @@ body {
 	@include adaptiveValue("padding-bottom", 35, 10);
 	transition: all 0.3s ease;
 	&.scrolled {
-		padding: toRem(8);
+		padding: toRem(8) toRem(0);
 		background-color: $background;
 		border-bottom: toRem(1) solid var(--accent-color);
 	}
