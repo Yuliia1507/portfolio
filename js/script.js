@@ -407,10 +407,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		if (window.innerWidth <= 767) {
 			items.forEach((item, index) => {
-				item.style.display = index < itemsShown ? "grid" : "none";
+				item.style.display = index < itemsShown ? "block" : "none";
 			});
 			// Показуємо кнопку тільки якщо ширина <= 767 і елементів більше, ніж itemsToShow
-			showMoreBtn.style.display = items.length > itemsToShow ? "grid" : "none";
+			showMoreBtn.style.display = items.length > itemsToShow ? "block" : "none";
 		} else {
 			// Ховаємо кнопку на великих екранах
 			showMoreBtn.style.display = "none";
