@@ -3786,9 +3786,10 @@ body.menu-open {
   bottom: 0;
   left: 0;
   height: 0.25rem;
-  width: 100%;
+  width: 0;
   background: var(--accent-color);
   z-index: 1000;
-  -webkit-transition: width 0.2s linear;
-  transition: width 0.2s linear;
+  opacity: 0;
+  -webkit-transition: width 0.2s linear, opacity 0.3s ease-in-out;
+  transition: width 0.2s linear, opacity 0.3s ease-in-out;
 }

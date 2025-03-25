@@ -1444,8 +1444,11 @@ body {
 	bottom: 0;
 	left: 0;
 	height: toRem(4);
-	width: 100%;
+	width: 0;
 	background: var(--accent-color);
 	z-index: 1000;
-	transition: width 0.2s linear;
+	opacity: 0;
+	transition:
+		width 0.2s linear,
+		opacity 0.3s ease-in-out;
 }
