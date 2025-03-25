@@ -233,7 +233,7 @@ body {
 			padding: toRem(120) toRem(15) toRem(30) toRem(15);
 			background-color: $background;
 			z-index: 15;
-			@media(max-width:toEm(480)){
+			@media (max-width: toEm(480)) {
 				padding-top: toRem(100);
 			}
 			&::before {
@@ -1438,4 +1438,14 @@ body {
 			transform: scale(1.1);
 		}
 	}
+}
+.progress-bar-horizontal {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: toRem(4);
+	width: 100%;
+	background: var(--accent-color);
+	z-index: 1000;
+	transition: width 0.2s linear;
 }

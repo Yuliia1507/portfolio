@@ -443,3 +443,13 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Адаптація видимості при зміні розміру вікна
 	window.addEventListener("resize", toggleItems);
 });
+
+document.addEventListener("scroll", function () {
+	let scrollTop = document.documentElement.scrollTop;
+	let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	let scrollPercentage = (scrollTop / scrollHeight) * 100;
+	let progressBar = document.querySelector(".progress-bar-horizontal");
+	if (progressBar) {
+		progressBar.style.width = scrollPercentage + "%";
+	}
+});
