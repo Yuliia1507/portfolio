@@ -460,3 +460,5 @@ document.addEventListener("scroll", function () {
 
 	progressBar.style.width = scrollPercentage + "%";
 });
+
+
